@@ -1,0 +1,13 @@
+aws_dbt_snowflake_project:
+  outputs:
+    dev:
+      account: IYGXXOJ-WN77345
+      database: AIRBNB
+      password: "{{ env_var('AIRBNB_SNOWFLAKE_PASSWORD') }}"
+      role: ACCOUNTADMIN
+      schema: dbt_schema
+      threads: 1
+      type: snowflake
+      user: SONIKIRTAN110
+      warehouse: SNOWFLAKE_LEARNING_WH
+  target: dev
